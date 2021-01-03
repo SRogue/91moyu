@@ -15,7 +15,7 @@ function resolve(dir) {
 // }
 const ENV = process.env.NODE_ENV;
 module.exports = {
-    publicPath: ENV === "development" ? "./" : "/91moyu/",
+    publicPath: ENV === "development" ? "./" : "./",
     outputDir: "dist",//打包后的项目目录名称
     indexPath:"index.html"
     // chainWebpack: (config) => {
