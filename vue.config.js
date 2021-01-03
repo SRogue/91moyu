@@ -13,10 +13,11 @@ function resolve(dir) {
 //             ],
 //         })
 // }
-
+const ENV = process.env.NODE_ENV;
 module.exports = {
-    publicPath: './',
+    publicPath: ENV === "development" ? "./" : "/91moyu/",
     outputDir: "dist",//打包后的项目目录名称
+    indexPath:"index.html"
     // chainWebpack: (config) => {
     //     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
     //     types.forEach(type => addStyleResource(config.module.rule('less').oneOf(type)))
